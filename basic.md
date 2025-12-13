@@ -10,7 +10,7 @@
 ```js
 let a;
 console.log(a); // undefined
-</details>
+
 <details> <summary><strong>Q2. What will be the output of <code>undefined == null</code> and <code>undefined === null</code>? Why?</strong></summary>
 console.log(undefined == null);  // true
 console.log(undefined === null); // false
