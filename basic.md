@@ -1,4 +1,19 @@
-# 📘 JavaScript Basic Interview Questions
+<!-- TOC_START -->
+| No. | Questions |
+| --- | --------- |
+| 1 | [Q1. What is undefined in JavaScript? ](#What-is-undefined-in-JavaScript) |
+
+1. **Undefined:**
+
+      `undefined` means a variable has been declared but not assigned any value.
+    ```let a;
+        console.log(a); // undefined
+       ```
+
+
+
+
+📘 JavaScript Basic Interview Questions
 
 ---
 
@@ -27,14 +42,4 @@ Explanation:
 
 ### Table of Contents
 
-<!-- TOC_START -->
-| No. | Questions |
-| --- | --------- |
-| 1 | [Q1. What is undefined in JavaScript? ](#What-is-undefined-in-JavaScript) |
 
-1. **Undefined:**
-
-      `undefined` means a variable has been declared but not assigned any value.
-    ```let a;
-        console.log(a); // undefined
-       ```
