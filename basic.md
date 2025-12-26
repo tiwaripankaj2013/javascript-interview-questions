@@ -3,7 +3,7 @@
 | No. | Questions |
 | --- | --------- |
 | 1 | [What is undefined in JavaScript?](#What-is-undefined-in-JavaScript) |
-| 2 | [What will be the output of undefined == null and undefined === null?](#What-will-be-the-output-of)|
+| 2 | [What will be the output of undefined == null and undefined === null?](#What-will-be-the-output-of-undefined-==-null-and undefined-===-null)|
 1. ### What is `undefined` in JavaScript?
       `undefined` means a variable has been declared but not assigned any value.
     ```let a;
