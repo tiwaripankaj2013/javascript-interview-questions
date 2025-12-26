@@ -4,12 +4,12 @@
 | --- | --------- |
 | 1 | [What is undefined in JavaScript?](#What-is-undefined-in-JavaScript) |
 | 2 | [What will be the output of undefined == null and undefined === null?](#What-will-be-the-output-of)|
-1. **Undefined:**
+1. ### What is `undefined` in JavaScript?
       `undefined` means a variable has been declared but not assigned any value.
     ```let a;
         console.log(a); // undefined
        ```
-2. **nullAndUndefined:**
+2. ### What will be the output of `undefined` `==` `null` and `undefined` `===` `null`?
     ```console.log(undefined == null);  // true
     console.log(undefined === null); // false
        ```
