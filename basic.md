@@ -2,6 +2,7 @@
 
 ---
 
+
 <details>
 <summary><strong>Q1. What is <code>undefined</code> in JavaScript?</strong></summary>
 
@@ -23,3 +24,17 @@ Explanation:
 === checks both value and type, which are different
 
 </details>
+
+### Table of Contents
+
+<!-- TOC_START -->
+| No. | Questions |
+| --- | --------- |
+| 1 | [Q1. What is undefined in JavaScript? ](#What-is-undefined-in-JavaScript) |
+
+1. **Undefined:**
+
+      `undefined` means a variable has been declared but not assigned any value.
+    ```let a;
+        console.log(a); // undefined
+       ```
