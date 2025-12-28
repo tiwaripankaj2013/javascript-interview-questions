@@ -1,0 +1,297 @@
+Q.16.  What will be the output of the below statement?
+console.log(NaN==NaN); 
+Output :  false
+Q.17.  What is the difference between isNaN() and isFinite() method?
+	
+
+
+Q.18.  Explain the syntactical features of arrow function.
+1. Shorter syntax
+2. No this binding
+3. Implicit return
+const add = (a,b) => a+b;
+Q.19.  Why ìthisî does not work in arrow function?
+Arrow functions do not have their own this, they take this from the parent scope.
+Q.20.  Explain output of following code with reason.
+const obj={
+     method:()=>{
+                      console.log(this);
+      }
+}
+Output : // window / global object
+Reason: arrow function ignores object as this.
+
+Q.21.  How can you handle arguments object like functionality in arrow function?
+Use rest parameters:
+const f = (...args) => console.log(args);
+f(1,2,3); // [1,2,3]
+
+Q.22.  Can you write IIFE with arrow function syntax?
+Yes.
+(() => {
+  console.log("IIFE");
+})();
+
+Q.23.  How can you access private variable or function outside the scope ?
+Using a closure.
+function outer(){
+  let x = 10;
+  return () => x;
+}
+const fn = outer();
+console.log(fn()); // 10
+
+Q.24.  Explain the advantage of closure ?
+Data privacy
+Encapsulation
+Maintain state
+
+
+
+
+Q.25. What is function currying?
+Transforming a function with multiple args into nested single-argument functions.
+Q.26. const multiplication=a=>b=>c=>return a*b*c
+What will this statement do? Explain in detail.
+
+const multiplication = a => b => c => a*b*c;
+console.log(multiplication(2)(3)(4)); // 24
+It returns a series of functions, each capturing previous arguments.
+Q.27.  Explain practical usage of function currying.
+Reuse functions
+Logging utilities
+Validation frameworks
+const add = a => b => a + b;
+const add10 = add(10);
+console.log(add10(5)); // 15
+
+Q.28.  What is the purpose of the iterator ?
+Iterators provide sequential access to elements.
+
+Q.29.  How do you create an iterator ?
+
+function createIterator(arr){
+  let i = 0;
+  return {
+    next(){
+      return i < arr.length
+        ? {value: arr[i++], done:false}
+        : {done:true};
+    }
+  }
+}
+
+Q.30.  Explain a practical use of an iterator?
+Used in:
+for...of loops
+Custom data structures
+Q.31.  What are generator functions? Explain the syntax.
+	Functions that can pause and resume using yield.
+function* gen(){
+  yield 1;
+  yield 2;
+}
+
+Q.32.  Which is the right syntax function* () { } or function *(){} ?
+function* test(){}
+function *test(){}
+
+Q.33.  Explain all methods of generator objects.
+
+Q.34.  Explain the use of ìyield*î
+
+Delegates to another generator.
+function* g1(){
+  yield* [1,2,3];
+}
+console.log([...g1()]); // [1,2,3]
+
+Q.35.  Can you prevent return() from terminating the generator ?
+	No, you cannot prevent return() from terminating a generator.
+Calling generator.return(value) immediately ends the generator, sets done: true, and no further yield statements are executed.
+
+Q.36.  When do you need try...catch ? 
+
+Q.37.  How can you generate an error ?
+
+Q.38.  Can you generate SyntaxError or ReferenceError kind of errors ?
+Q.39.  What is the purpose of the finally block ?
+Q.40.  How can you refer to the name or description of error ?
+Q.41.  Can we have finally without a catch block as well ?
+Q.42. What is the difference between for...in and for...of ?
+Q.43. What will be the output of the below code ?
+Q.44.  What will be the output of below statements ?
+Q.45. What is the difference between push() and unshift() method ?
+Q.46.  What is the difference between pop() and shift() ?
+Q.47.  How can you insert an element at a given position ?
+Q.48.  How can you remove  a specific element ?
+Q.49.  What does splice() return ?
+Q.50.  If there is not element removed then what will splice() method return ?
+=> let arr=["One","Two","Three","Four","Five"];
+     console.log(arr.splice(2,0,"New")); 
+
+Q.1)What is the difference between find() and filter() method ?
+Q.2)If there is no value to return, what will findIndex() return ?
+Q.3) What is the difference between indexOf() and includes() method ?
+Q.4) How will you search multiple values in an array ?
+Q.5)What will be the output of this code ?
+        => let arr=["One","Two","Three","Four","Five"];
+             console.log(arr.lastIndexOf("Abcd")); 
+Q.1) Find length of each element in a new array.
+Q.2) Find the square root of every element and store it in new array.
+Q.3) There is an array called products as shown here
+         => let products=[
+    	{pCode:1,pName:"Apple"},
+    	{pCode:2,pName:"Banana"},
+    	{pCode:3,pName:"Grapes"},
+    	{pCode:4,pName:"Oranges"}
+              ]
+Get all product names (i.e pNames) in a new array.
+Q.1) How will you flatten an array i.e e.g converting 2 dimensional array into single dimension ?
+Q.2)  Get sum of a key field of an object literal
+          => const employees=[
+    	{eNo:1001,salary:3000},
+    	{eNo:1002,salary:2200},
+   	{eNo:1003,salary:3400},
+    	{eNo:1004,salary:6000}
+            ]
+         Then find total salary of employees.
+Q.3)  Find avg value of all elements of an array ? 
+Q.4) Find the sum or product of all elements ?
+Q.5) What is the difference between reduce() and reduceRight() ?
+Q.1) What will be the output in case an array has ìundefinedî while sorting the values ?
+Q.2) How will sort an object literal ? 
+Q.3) How will you sort a numeric array ? 
+Q.4) Sort all values of array in descending order.
+Q.1) What is the destructuring assignment ?
+Q.2) Swap values using destructuring.
+Q.3) What will be the output of this code ?
+        => let [a,b,c] = [5,,7];
+             console.log(a,b,c);
+Q.4) How will you set a default value while destructuring an array ?
+1) Explain different ways of creating date/time object ?
+2) What will be the output of the below code ?
+     => const dt = new Date(2020,08,23);
+          console.log(dt);
+3) Explain various formats of ISO standard followed by JavaScript ?
+Q.1) Get Character month ?
+Q.2) Find the date before 50 days of the given date.
+Q.3) What will be the output if you add 35 as date in Date() constructor.
+Q.1) Calculate the date difference in days ?
+Q.2) How can you change hours or minutes in time ?
+Q.1) Can you have dynamic keys with object literal?
+Q.2) How can you add read-only properties to an object?
+Q.3) What is property value short hand with object literal?
+Q.4) What will be the output of this code?
+let obj={a:'First'};
+let obj1 = obj;
+obj1.a="Second";
+console.log(obj.a);
+Explain the reason why?
+Q.5) How can we create a clone or separate copy of an object literal?
+Q.1) What will be the output of this code if you run in the browser and why?
+function test(){
+   console.log(this);
+}
+test();
+Q.2) What is the context of “this” inside arrow function? Or what will be the output of this code?
+let obj={
+ 
+    test:()=>{
+       console.log(this);
+    }
+}
+obj.test();
+Q.1) What is the difference between call, apply and bind()?
+Q.2) What will be the output of this code? Or can you assign value to “this” object with assignment operator i.e. “=”?
+const obj={
+      a:6
+}
+function test(){
+      this=obj;
+}
+test();
+Q.1) How can you create a class?
+Q.2) When does constructor() called?
+Q.3) Can we have dynamic property or method names in a class?
+Q.4) What is a class expression?
+Q.5) What are static members in a class? What is the purpose of defining them as static?
+Q.6) How can you call another static method from a class?
+Q.1) How can you inherit a class?
+Q.2) What is subclassing?
+Q.3) What is the purpose of super keyword?
+Q.4) How will you override a method?
+Q.5) How can you extend a built-in class? 
+Q.1) Explain a practical scenario of object literal destructuring ?
+Q.2) Explain the output of this code
+        =>  const { a=90, b } = {  };
+              console.log(a,b);
+Q.1) What are the advantages of using Map over objects?
+Q.2) How will you iterate through Map ?
+Q.3) Can you assign key/values with this syntax?
+map[‘key’]=value
+Explain the reason for the answer.
+Q.4) How can you convert simple objects to Map?
+Q.5) How can you convert a Map into simple objects?
+Q.6) How will you remove an item or all items from Map?
+Q.1) What is the difference between Map and Set ?
+Q.2) How will you remove specific values from Set ?
+Q.3) What will entries() method with Set will return ?
+Q.1) Explain difference between Map and WeakMap ?
+Q.2) Explain difference between Set and WeakSet ?
+
+—-DOM WEB —-
+Question 1 What is the difference between window and document ?
+Question 2 What is DOM [Document Object Model] or  DOM API ?
+Question 3 What is BOM [Browser Object Model] ?
+Question 4 Explain the difference between DOM and BOM ?
+Question 5 Which is the global object in browser ?
+Question 6 How will we check the innerWidth and innerHeight of window ?
+Question 7 How will you get hostname or value typed in address bar ?
+Q.1) Explain the difference between setTimeout() and setInterval() ?
+Q.2) Why canít we write document.setTimeout() or document.setInterval() ?
+Q.3) How can you stop a timer ?
+Q.4) How will you create a digital clock ?
+Q.1) Which is the default propagation path ?
+Q.2) How can you stop the event propagation ? 
+Q.3) How can you change the default propagation path ?
+Q.4) How can you get the reference of element on which event is fired ?
+Q.5) There can be a practical question similar to code sample and one can ask what will be the output and why ?
+Q.1) How event bubbling or capturing is useful in the practical programming world ?
+Q.2) Which property can be used to check the element type on which the event is triggered ?
+Q.3) How can you get value of the element which raised the event ?
+Q.1) What is a node in DOM tree ? Explain different types of nodes ?
+Q.2) How can you access next same level element for a given node element ?
+Q.3) What is the difference between childeNodes and children property ?
+Q.4) How can you check whether an element has child nodes or not ?
+Q.5)  What is the purpose of DOM navigation ?
+Q.6)  What will be the output of below given statement  - element.lastChild.nextSibling ?
+Q.1) Can you use document.getElementById() & element.getElementById() ?
+Q.2) What does the getElementsByTagName() return ?
+Q.3) What is the difference between getElementsByClassName() & getElementsByName() ?
+Q.1) Explain the difference between querySelector() & querySelectorAll().
+Q.2) How can you search elements using pseudo classes?
+Q.3) Between getElementBy methods and querySelector methods which is better to use?
+Q.1) Explain various ways to configure an event with HTML elements.
+Q.2) Explain syntax of addEventListener() method.
+Q.3) What is an event object ?
+Q.1) How will you disable right click on an element?
+Q.2) How can you check whether a special key is pressed or not while an event is generated?
+Q.3) How do you check mouse button value while an event is generated?
+Q.4) For ctrl key and cmd on mac - how will you right the condition to check the key press.
+Q.1) Explain the difference between clientX/Y and pageX/Y.
+Q.2) Explain the difference between clientX/Y and screenX/Y.
+Q.1) How can you check if control and Z  is pressed or not ?
+Q.2) What does event.code return ?
+Q.3) Explain the difference between event.code and event.key ?
+Q.1) What is the difference between onblur and onchange event?
+Q.2) How will you handle events of checkbox and radio buttons?
+Q.3) Differentiate onkeypress/onkeyup and oninput event.
+Q.4) Which event you prefer with select [i.e. drop down list]?
+Q.5) How will you get the text value of selected item from a select element i.e. a drop down list?
+Q.1) Explain about cut,copy and paste events
+Q.2) How can you stop an event of cut, copy or paste for an element ?
+
+
+
+
