@@ -231,8 +231,8 @@ console.log(add10(5)); // 15
 Iterators provide sequential access to elements.
 
 ---
-29. ### How do you create an iterator?
-`function createIterator(arr) {
+29. ### How do you create an iterator?   
+```function createIterator(arr) {
   let i = 0;
   return {
     next() {
@@ -242,7 +242,7 @@ Iterators provide sequential access to elements.
     }
   };
 }
-`
+```
 ---
 30. ### Explain a practical use of an iterator
 * `for...of` loops
