@@ -46,7 +46,8 @@
       `undefined` means a variable has been declared but not assigned any value.
     ```let a;
         console.log(a); // undefined
----    ```
+   ```
+--- 
 2. ### What will be the output of `undefined` `==` `null` and `undefined` `===` `null`?
     ```console.log(undefined == null);  // true
     console.log(undefined === null); // false
