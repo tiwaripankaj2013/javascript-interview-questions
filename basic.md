@@ -3,7 +3,7 @@
 | No. | Questions |
 | --- | --------- |
 | 1 | [What is undefined in JavaScript?](#What-is-undefined-in-JavaScript) |
-| 2 | [What will be the output of undefined == null and undefined === null?](#What-will-be-the-output-of-undefined-==-null-and undefined-===-null)|
+| 2 | [What will be the output of undefined == null and undefined === null?](undefined-vs-null-comparison) | 
 | 3 | [Can you explicitly assign undefined to a variable?](#can-you-explicitly-assign-undefined-to-a-variable) |
 | 4 | [Can you explicitly assign undefined to a variable?](#can-you-explicitly-assign-undefined-to-a-variable) |
 | 5 | [What is hoisting in JavaScript?](#what-is-hoisting-in-javascript) |
