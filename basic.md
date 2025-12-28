@@ -137,7 +137,7 @@
 
 ---
 
-### 19. Why `this` does not work in arrow function?
+### 19. Why this does not work in arrow function?
 Arrow functions do not have their own `this` context. Instead, they capture the `this` value of the parent lexical scope (the context in which they were created).
 
 ---
