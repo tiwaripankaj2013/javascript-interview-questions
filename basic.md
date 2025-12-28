@@ -44,18 +44,19 @@
 ---
 1. ### What is `undefined` in JavaScript?
       `undefined` means a variable has been declared but not assigned any value.
-    ```let a;
-        console.log(a); // undefined
-   ```
---- 
+    `let a;
+        console.log(a); // undefined `
+--
+
 2. ### What will be the output of `undefined` `==` `null` and `undefined` `===` `null`?
     ```console.log(undefined == null);  // true
     console.log(undefined === null); // false
-       ```
-    Explanation:
+ 
+       Explanation:
     == performs type coercion and treats both as empty values
     === checks both value and type, which are different
 ---
+
 3. ### Can you explicitly assign `undefined` to a `variable`
     `let i = undefined
     Yes, but not recommended.
@@ -277,8 +278,9 @@ function* g1() {
   yield* [1, 2, 3];
 }
 console.log([...g1()]); // [1, 2, 3]
-
 `
+---
+
 35. ### Can you prevent return() from terminating a generator?
 No.
 Calling `generator.return()` immediately ends the generator and sets `done: true.`
