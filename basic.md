@@ -21,9 +21,7 @@
 | 17 | [What is the difference between isNaN() and isFinite() method?](what-is-the-difference-between-isnan-and-isfinite-method) |
 | 18 | [Explain the syntactical features of arrow function?.](explain-the-syntactical-features-of-arrow-function) |
 | 19 | [Why this does not work in arrow function?](why-this-does-not-work-in-arrow-function) |
-| 20 | [Explain output of following code with reason const obj={
-     method:()=>{  console.log(this)}}](explain-output-of-following-code-with-reason) |
-
+| 20 | [Explain output of following code with reason const obj={method:()=>{console.log(this)}}?](explain-output-of-following-code-with-reason)| 
 | 21 | [How can you handle arguments object like functionality in arrow function?](how-can-you-handle-arguments-object-like-functionality-in-arrow-function) | |
 | 22 | [Can you write IIFE with arrow function syntax?](can-you-write-iife-with-arrow-function-syntax) | |
 | 23 | [How can you access private variable or function outside the scope?](how-can-you-access-private-variable-or-function-outside-the-scope) | |
