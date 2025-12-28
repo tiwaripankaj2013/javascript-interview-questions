@@ -1,0 +1,2 @@
+let arr=[1,5,89,5,900,234,1456];
+console.log(Math.max(...arr));

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1 id="text">Waiting...</h1>
+        <button onclick="tryTimer()">Start Timer</button>
+        <script>
+            let cnt=0;
+            function tryTimer(){
+                setInterval(()=>{
+                    document.getElementById("text").innerHTML=cnt;
+                    cnt++;
+                },1000);
+            }
+        </script>
+    </body>
+    </html>

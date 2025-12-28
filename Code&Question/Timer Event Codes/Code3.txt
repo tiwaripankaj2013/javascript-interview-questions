@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1 id="text">Waiting...</h1>
+        <button onclick="tryTimer()">Start Timer</button>
+        <script>
+            function tryTimer(){
+                setTimeout(()=>{
+                    document.getElementById("text").innerHTML="Timed out with arrow function...";
+                },2000);
+            }
+        </script>
+    </body>
+    </html>

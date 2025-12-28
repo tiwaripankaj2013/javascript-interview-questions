@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    <style>
+        div{
+            width: 500px;
+            height: 200px;
+            display: inline-block;
+            padding:20px;
+            background-color:lightskyblue;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            margin-left: 300px;
+            margin-top: 200px;
+ 
+        }
+        input{
+            font-size: 25px;
+            margin: 10px;
+        }
+ 
+    </style>        
+    </head>
+    <body>
+     
+        <div id="divE">
+            <h1 id="msg"> Event Status</h1>
+            <input type="text" 
+            onfocus="eHandler('On Focus')"
+            onblur="eHandler('On Blur')"/>
+            <input type="text"/>
+        </div>
+    <script>
+     function eHandler(msg){
+        
+       document.getElementById("msg").innerHTML = msg;
+     }
+ 
+    </script>    
+    </body>
+</html>
