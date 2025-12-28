@@ -47,12 +47,11 @@
     ```let a;
         console.log(a); // undefined
 ---    ```
-
 2. ### What will be the output of `undefined` `==` `null` and `undefined` `===` `null`?
     ```console.log(undefined == null);  // true
     console.log(undefined === null); // false
        ```
-       Explanation:
+    Explanation:
     == performs type coercion and treats both as empty values
     === checks both value and type, which are different
 ---
