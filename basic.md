@@ -20,7 +20,7 @@
 | 16 | [What will be the output of the statement Output of console.log(NaN == NaN)](what-will-be-the-output-of-the) |
 | 17 | [What is the difference between isNaN() and isFinite() method?](what-is-the-difference-between-isnan-and-isfinite-method) |
 | 18 | [Explain the syntactical features of arrow function?.](explain-the-syntactical-features-of-arrow-function) |
-| 19 | [Why 'this' does not work in arrow function?](why-this-does-not-work-in-arrow-function) |
+| 19 | [Why this does not work in arrow function?](why-this-does-not-work-in-arrow-function) |
 | 20 | [Explain output of following code with reason const obj={
      method:()=>{  console.log(this)}}](explain-output-of-following-code-with-reason) |
 
